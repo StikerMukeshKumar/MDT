@@ -1,0 +1,87 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ROOT FIX (MOST IMPORTANT) */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+/* BODY BASE */
+body {
+  font-family: "Inter", "Roboto", sans-serif;
+  background-color: #0f172a;
+  color: #ffffff;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* REMOVE VITE DEFAULT ISSUE */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* BUTTON RESET */
+button {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* SCROLLBAR (PREMIUM LOOK) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00c6ff, #0072ff);
+  border-radius: 10px;
+}
+
+/* SELECTION COLOR */
+::selection {
+  background: #00c6ff;
+  color: #9e9191;
+}
+
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
+/* IMAGE DEFAULT */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* UTILITY CLASSES (OPTIONAL BUT USEFUL) */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
